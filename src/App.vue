@@ -3,10 +3,16 @@
     export default Vue.extend({
         mpType: 'app',
         onLaunch() {
-            console.log('App Launch')
+            const my__token = uni.getStorageSync('my__token')
+
+            if(my__token){
+                uni.reLaunch({
+                    url:'/pages/home/home'
+                })
+            }
         },
         onShow() {
-            console.log('App Show')
+            // console.log('App Show')
         },
         onHide() {
             console.log('App Hide')
@@ -16,4 +22,8 @@
 
 <style>
     /*每个页面公共css */
+    page{
+        background-color: #f8f8f8;
+        height: 100%
+    }
 </style>

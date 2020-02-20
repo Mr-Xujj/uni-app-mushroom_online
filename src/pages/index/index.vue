@@ -3,6 +3,8 @@
         <image class="logo" src="../../static/logo.png"></image>
 		<view>
             <text class="title">{{title}}</text>
+            <text> 导入文件:dist/dev/mp-weixin --运行代码：npm run dev:mp-weixin</text>
+			
         </view>
 	</view>
 </template>
